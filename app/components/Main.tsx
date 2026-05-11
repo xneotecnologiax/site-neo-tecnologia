@@ -14,29 +14,15 @@ function Main() {
             <div className="mb-10 grid gap-5 sm:gap-6 md:mb-12 md:grid-cols-3">
                 <div className="rounded-2xl border bg-black p-5 shadow-sm sm:p-6">
                     <h3 className={`${inter.className} mb-2 text-lg font-semibold text-white-400`}>Novo contato</h3>
-                    <p className={`${inter.className} text-sm leading-6 text-white-400`}>Mensagem recebida automaticamente.</p>
+                    <p className={`${inter.className} text-sm leading-6 text-white-400`}>A IA recebe a primeira mensagem e inicia o atendimento sem demora.</p>
                 </div>
                 <div className="rounded-2xl border bg-black p-5 shadow-sm sm:p-6">
                     <h3 className={`${inter.className} mb-2 text-lg font-semibold text-white-400`}>Resposta imediata</h3>
-                    <p className={`${inter.className} text-sm leading-6 text-white-400`}>O cliente recebe retorno inicial sem precisar esperar.</p>
+                    <p className={`${inter.className} text-sm leading-6 text-white-400`}>O cliente recebe retorno inicial em segundos, com mais agilidade e menos espera.</p>
                 </div>
                 <div className="rounded-2xl border bg-black p-5 shadow-sm sm:p-6">
                     <h3 className={`${inter.className} mb-2 text-lg font-semibold text-white-400`}>Atendimento organizado</h3>
-                    <p className={`${inter.className} text-sm leading-6 text-white-400`}>As informações chegam mais claras, rápidas e prontas para ação.</p>
-                </div>
-            </div>
-            <div className="grid gap-8 md:grid-cols-3">
-                <div>
-                    <h3 className={`${inter.className} mb-3 text-xl font-semibold`}>Atendimento mais ágil</h3>
-                    <p className={`${inter.className} leading-7 text-gray-600`}>Automatize respostas iniciais, reduza o tempo de espera e melhore a experiência do cliente logo no começo da conversa.</p>
-                </div>
-                <div>
-                    <h3 className={`${inter.className} mb-3 text-xl font-semibold`}>Mais organização</h3>
-                    <p className={`${inter.className} leading-7 text-gray-600`}>Estruture informações, reduza falhas no processo e mantenha o atendimento mais claro, consistente e eficiente.</p>
-                </div>
-                <div>
-                    <h3 className={`${inter.className} mb-3 text-xl font-semibold`}>Mais conversão</h3>
-                    <p className={`${inter.className} leading-7 text-gray-600`}>Com respostas rápidas e fluxos mais inteligentes, seu negócio aproveita melhor os leads e aumenta suas chances de conversão.</p>
+                    <p className={`${inter.className} text-sm leading-6 text-white-400`}>Os dados chegam mais claros, organizados e prontos para ação.</p>
                 </div>
             </div>
             <div className="mt-20 grid gap-10 md:grid-cols-[0.9fr_1.1fr]">
