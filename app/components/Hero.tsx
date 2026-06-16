@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+
 function Hero() {
 
     const [step, setStep] = useState(1);

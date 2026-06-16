@@ -3,6 +3,7 @@
 import { inter } from "../font";
 import Image from "next/image";
 import { useState } from "react";
+
 function Header() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);

@@ -2,7 +2,9 @@
 
 import { useState } from "react";
 import { dmSans, inter } from "../font";
+
 function Main() {
+
     const [faqAberta, setFaqAberta] = useState(0);
 
     return (
