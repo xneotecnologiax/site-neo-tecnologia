@@ -14,24 +14,24 @@ function Main() {
                 <p className="font-[family-name:var(--font-inter)] text-center mt-4 text-sm leading-7 text-gray-600 sm:text-base sm:leading-8">A Neo Tecnologia cria soluções com Inteligência Artificial para acelerar respostas, organizar o atendimento e aumentar a eficiência da sua operação!</p>
             </div>
             <div className="mb-10 grid gap-5 sm:gap-6 md:mb-12 md:grid-cols-3">
-                <div className="rounded-2xl border bg-black p-5 shadow-sm sm:p-6">
-                    <h3 className={`${inter.className} mb-2 text-lg font-semibold text-white-400`}>Novo contato</h3>
-                    <p className={`${inter.className} text-sm leading-6 text-white-400`}>A IA recebe a primeira mensagem e inicia o atendimento sem demora.</p>
+                <div className="rounded-2xl border border-black bg-white p-5 shadow-sm sm:p-6">
+                    <h3 className={`${inter.className} mb-2 text-lg font-semibold text-black`}>Novo contato</h3>
+                    <p className={`${inter.className} text-sm leading-6 text-black`}>A IA recebe a primeira mensagem e inicia o atendimento sem demora.</p>
                 </div>
-                <div className="rounded-2xl border bg-black p-5 shadow-sm sm:p-6">
-                    <h3 className={`${inter.className} mb-2 text-lg font-semibold text-white-400`}>Resposta imediata</h3>
-                    <p className={`${inter.className} text-sm leading-6 text-white-400`}>O cliente recebe retorno inicial em segundos, com mais agilidade e menos espera.</p>
+                <div className="rounded-2xl border border-black bg-white p-5 shadow-sm sm:p-6">
+                    <h3 className={`${inter.className} mb-2 text-lg font-semibold text-black`}>Resposta imediata</h3>
+                    <p className={`${inter.className} text-sm leading-6 text-black`}>O cliente recebe retorno inicial em segundos, com mais agilidade e menos espera.</p>
                 </div>
-                <div className="rounded-2xl border bg-black p-5 shadow-sm sm:p-6">
-                    <h3 className={`${inter.className} mb-2 text-lg font-semibold text-white-400`}>Atendimento organizado</h3>
-                    <p className={`${inter.className} text-sm leading-6 text-white-400`}>Os dados chegam mais claros, organizados e prontos para ação.</p>
+                <div className="rounded-2xl border border-black bg-white p-5 shadow-sm sm:p-6">
+                    <h3 className={`${inter.className} mb-2 text-lg font-semibold text-black`}>Atendimento organizado</h3>
+                    <p className={`${inter.className} text-sm leading-6 text-black`}>Os dados chegam mais claros, organizados e prontos para ação.</p>
                 </div>
             </div>
-            <div className="mt-20 grid gap-10 md:grid-cols-[0.9fr_1.1fr]">
-                <div className="max-w-sm md:pt-2">
-                    <h2 className={`${dmSans.className} text-3xl font-normal leading-tight`}>Perguntas Frequentes</h2>
+            <div className="mt-20">
+                <div className="mb-10 text-center">
+                    <h2 className={`${dmSans.className} text-3xl font-normal leading-tight sm:text-4xl`}>Perguntas frequentes</h2>
                 </div>
-                <div className={`${inter.className} border-t border-gray-300 mt-4 md:mt-0`}>
+                <div className={`${inter.className} mx-auto max-w-3xl border-t border-gray-300`}>
                     <h3 className="py-6 text-base font-medium leading-7 pr-10 font-semibold flex items-center justify-between gap-4 cursor-pointer" onClick={() => setFaqAberta(faqAberta === 1 ? 0 : 1)}>
                         <span>O que nosso chatbot faz na prática?</span>
                         <span className="text-xl leading-none text-gray-500">{faqAberta === 1 ? "-" : "+"}</span>

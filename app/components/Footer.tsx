@@ -1,5 +1,9 @@
+"use client";
+
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+
 function Footer() {
-    
+
     return (
         <footer className="bg-black text-white">
             <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16">
@@ -20,14 +24,16 @@ function Footer() {
                     </div>
                     <div>
                         <h4 className="font-[family-name:var(--font-inter)] mb-4 text-sm font-semibold">Serviços</h4>
-                        <p className="font-[family-name:var(--font-inter)] mt-3 text-sm text-gray-400">Automações</p>
-                        <p className="font-[family-name:var(--font-inter)] mt-3 text-sm text-gray-400">Chatbots com IA</p>
+                        <p className="font-[family-name:var(--font-inter)] mt-3 text-sm text-gray-400">Chatbot com IA</p>
+                        <p className="font-[family-name:var(--font-inter)] mt-3 text-sm text-gray-400">Criação de site</p>
                     </div>
                     <div>
                         <h4 className="font-[family-name:var(--font-inter)] mb-4 text-sm font-semibold">Siga-nos</h4>
-                        <a href="#" className="font-[family-name:var(--font-inter)] mt-3 block text-sm text-gray-400 transition-colors hover:text-white">Facebook</a>
-                        <a href="#" className="font-[family-name:var(--font-inter)] mt-3 block text-sm text-gray-400 transition-colors hover:text-white">Instagram</a>
-                        <a href="#" className="font-[family-name:var(--font-inter)] mt-3 block text-sm text-gray-400 transition-colors hover:text-white">LinkedIn</a>
+                        <div className="flex items-center gap-4">
+                            <a href="https://www.facebook.com/profile.php?id=61565306484488" className="block text-sm text-gray-400 mt-3 hover:text-white transition-colors"><FaFacebookF /></a>
+                            <a href="https://www.instagram.com/neotecnologia.oficial/" className="block text-sm text-gray-400 mt-3 hover:text-white transition-colors"><FaInstagram /></a>
+                            <a href="https://www.linkedin.com/in/neo-tecnologia-13082240a/" className="block text-sm text-gray-400 mt-3 hover:text-white transition-colors"><FaLinkedinIn /></a>
+                        </div>
                     </div>
                     <div className="mt-12 border-t border-gray-800 pt-8">
                         <p className="font-[family-name:var(--font-inter)] text-sm text-gray-500">© 2026 Neo Tecnologia. Todos os direitos reservados.</p>

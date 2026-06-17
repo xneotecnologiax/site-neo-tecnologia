@@ -7,6 +7,8 @@ import { useState } from "react";
 function Header() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isProdutoOpen, setIsProdutoOpen] = useState(false);
+  const [isMobileProdutoOpen, setIsMobileProdutoOpen] = useState(false);
 
   return (
     <header id="topo" className="sticky top-0 z-50 px-4 pt-4">
@@ -28,7 +30,25 @@ function Header() {
         </div>
         <div>
           <nav className={`${inter.className} hidden md:flex flex-wrap items-center justify-center gap-4 md:gap-6`}>
-            <a href="#produto" className="text-sm font-medium hover:opacity-70 transition">Produto</a>
+            <div className="relative">
+              <button type="button" onClick={() => setIsProdutoOpen(!isProdutoOpen)} className="text-sm font-medium hover:opacity-70 transition">Produto</button>
+              {isProdutoOpen && (
+                <div className="absolute top-full left-0 z-50 mt-4 w-[350px] rounded-[28px] border border-white/10 bg-zinc-950 p-4 shadow-2xl">
+                  <div className="grid grid-cols-1 items-stretch gap-4">
+                    <div className="grid h-full grid-rows-2 gap-3">
+                      <a href="#chatbotcomia" className="block h-full rounded-2xl border border-white/15 bg-[#14141a] px-4 py-3 transition hover:bg-[#1b1b22]">
+                        <p className="text-base font-medium text-white">Chatbot com IA</p>
+                        <p className="mt-1 text-sm leading-6 text-white/60">Atendimento inteligente com IA para empresas.</p>
+                      </a>
+                      <a href="#criaçãodesite" className="block h-full rounded-2xl border border-white/15 bg-[#14141a] px-4 py-3 transition hover:bg-[#1b1b22]">
+                        <p className="text-base font-medium text-white">Criação de site</p>
+                        <p className="mt-1 text-sm leading-6 text-white/60">Sites modernos para apresentar sua empresa e converter mais clientes.</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
             <a href="#preço" className="text-sm font-medium hover:opacity-70 transition">Preço</a>
             <a href="#clientes" className="text-sm font-medium hover:opacity-70 transition">Clientes</a>
             <a href="#recursos" className="text-sm font-medium hover:opacity-70 transition">Recursos</a>
@@ -38,8 +58,23 @@ function Header() {
       </div>
 
       {isMenuOpen && (
-        <div className={`${inter.className} md:hidden flex flex-col gap-4 border-t border-white/10 px-4 pt-4 pb-4`}>
-          <a href="#produto" onClick={() => setIsMenuOpen(false)} className="text-lg font-medium hover:opacity-70 transition">Produto</a>
+        <div className={`${inter.className} md:hidden mt-5 flex flex-col gap-3 rounded-[28px] border-t border-white/10 bg-black/80 px-4 pt-4 pb-5 shadow-2xl backdrop-blur-md`}>
+          <button onClickCapture={() => setIsMobileProdutoOpen(!isMobileProdutoOpen)} className="flex w-full items-center justify-between py-3 text-left text-lg font-medium hover:opacity-70 transition">
+            <span>Produto</span>
+            <span className="text-xl leading-none">{isMobileProdutoOpen ? "-" : "+"}</span>
+          </button>
+          {isMobileProdutoOpen && (
+            <div className="mt-3 overflow-hidden rounded-[24px] border border-white/10 bg-zinc-950">
+              <a href="#chatbotcomia" onClick={() => {setIsMenuOpen(false); setIsMobileProdutoOpen(false);}} className="block border-b border-white/10 px-4 py-4 transition hover:bg-white/5">
+                <p className="text-base font-medium text-white">Chatbot com IA</p>
+                <p className="mt-1 text-sm leading-6 text-white/60">Atendimento inteligente com IA para empresas.</p>
+              </a>
+              <a href="criaçãodesite" onClick={() => {setIsMenuOpen(false); setIsMobileProdutoOpen(false);}} className="block px-4 py-4 transition hover:bg-white/5">
+                <p className="text-base font-medium text-white">Criação de site</p>
+                <p className="mt-1 text-sm leading-6 text-white/60">Sites modernos para apresentar sua empresa e converter masis clientes.</p>
+              </a>
+            </div>
+          )}
           <a href="#preco" onClick={() => setIsMenuOpen(false)} className="text-lg font-medium hover:opacity-70 transition">Preço</a>
           <a href="#clientes" onClick={() => setIsMenuOpen(false)} className="text-lg font-medium hover:opacity-70 transition">Clientes</a>
           <a href="#recursos" onClick={() => setIsMenuOpen(false)} className="text-lg font-medium hover:opacity-70 transition">Recursos</a>
