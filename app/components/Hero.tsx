@@ -83,7 +83,7 @@ function Hero() {
                     </div>
                 </div>
                 <div className="flex justify-center">
-                    <div className="w-full max-w-md min-h-[250px] rounded-3xl border border-zinc-200 bg-black p-5 shadow-lg sm:p-6">
+                    <div className="w-full max-w-md min-h-[260px] rounded-3xl border border-zinc-200 bg-black p-5 shadow-lg sm:p-6">
                         <section className="space-y-6">
                             <div className="flex items-center gap-3">{/* header */}
                                 <div className="flex items-center gap-2">

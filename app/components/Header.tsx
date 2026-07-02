@@ -85,7 +85,7 @@ function Header() {
               <p className="text-base font-medium text-white">Chatbot com IA</p>
               <p className="mt-1 text-sm leading-6 text-white/60">Atendimento inteligente com IA para empresas.</p>
             </a>
-            <a href="#criaçãodesite" onClick={() => { setIsMenuOpen(false); setIsMobileProdutoOpen(false); }} className="block px-4 py-4 transition hover:bg-white/5">
+            <a href="#criaçãodesite" onClick={() => { setIsMenuOpen(false); setIsMobileProdutoOpen(false); }} className="block border-b border-white/10 px-4 py-4 transition hover:bg-white/5">
               <p className="text-base font-medium text-white">Criação de site</p>
               <p className="mt-1 text-sm leading-6 text-white/60">Sites modernos para apresentar sua empresa e converter masis clientes.</p>
             </a>
