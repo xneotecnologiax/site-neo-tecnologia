@@ -5,7 +5,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 function Footer() {
 
     return (
-        <footer className="bg-black text-white">
+        <footer className="border-t border-white/20 bg-black text-white">
             <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16">
                 <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-5">
                     <div>
@@ -25,10 +25,10 @@ function Footer() {
                         <a href="/politica-de-cookies" className="font-[family-name:var(--font-inter)] mt-3 block text-sm text-gray-400 transition colors hover:text-white">Política de Cookies</a>
                     </div>
                     <div>
-                        <h4 className="font-[family-name:var(--font-inter)] mb-4 text-sm font-semibold">Serviços</h4>
-                        <p className="font-[family-name:var(--font-inter)] mt-3 text-sm text-gray-400">Chatbot com IA</p>
-                        <p className="font-[family-name:var(--font-inter)] mt-3 text-sm text-gray-400">Criação de site</p>
-                        <p className="font-[family-name:var(--font-inter)] mt-3 text-sm text-gray-400">Gestão de tráfego</p>
+                        <h4 className="font-[family-name:var(--font-inter)] mb-4 text-sm font-semibold">Produtos</h4>
+                        <p className="font-[family-name:var(--font-inter)] mt-3 text-sm text-gray-400">NeoChat IA 1.0</p>
+                        <p className="font-[family-name:var(--font-inter)] mt-3 text-sm text-gray-400">NeoBox IA</p>
+                        <p className="font-[family-name:var(--font-inter)] mt-3 text-sm text-gray-400">NeoBrain IA</p>
                     </div>
                     <div>
                         <h4 className="font-[family-name:var(--font-inter)] mb-4 text-sm font-semibold">Siga-nos</h4>
